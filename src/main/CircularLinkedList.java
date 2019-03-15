@@ -47,4 +47,9 @@ public class CircularLinkedList {
             }
 
     }
+
+    public static void main(String[] args) {
+        CircularLinkedList object=new CircularLinkedList();
+        object.print();
+    }
 }
