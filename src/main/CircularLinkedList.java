@@ -70,4 +70,15 @@ public class CircularLinkedList {
         }
         size++;
     }
+    public void addNodeToTail(int data){
+        if(size==0){
+            addNodeToHead(data);
+        }else{
+            Node node=new Node(data);
+            tail.next=node;
+            tail=node;
+            tail.next=head;
+            size++;
+        }
+    }
 }
