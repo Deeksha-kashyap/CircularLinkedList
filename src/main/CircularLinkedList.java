@@ -55,8 +55,11 @@ public class CircularLinkedList {
             object.addNodeToHead(i+1);
         }
         object.print();
-        for (int i = 0; i < 5; i++) {
-            object.addNodeToTail(i+1);
+            object.addNodeToTail(5);
+        object.print();
+        for (int i = 0; i < 6; i++) {
+            object.deleteHead();
+            object.print();
         }
     }
     public void addNodeToHead(int data){
