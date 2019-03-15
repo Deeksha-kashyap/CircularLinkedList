@@ -4,9 +4,9 @@ public class CircularLinkedList {
     int size=0;
     Node head=null;
     Node tail=null;
-    class Node{
-       int data;
-       Node next;
+    class Node {
+        int data;
+        Node next;
 
         public Node(int data) {
             this.data = data;
@@ -32,5 +32,19 @@ public class CircularLinkedList {
         public void setNext(Node next) {
             this.next = next;
         }
+    }
+        public void print(){
+            if(size==0){
+                System.out.println("List is empty");
+            }else{
+                Node temp=head;
+                do{
+                    System.out.print(" "+temp.data);
+                    temp=temp.next;
+                }
+                while(temp!=head);
+                System.out.println(" ");
+            }
+
     }
 }
