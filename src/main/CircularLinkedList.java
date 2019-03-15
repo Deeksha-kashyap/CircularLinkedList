@@ -84,4 +84,11 @@ public class CircularLinkedList {
             size++;
         }
     }
+    public void deleteHead(){
+        if(size!=0){
+            head=head.next;
+            tail.next=head;
+            size--;
+        }
+    }
 }
